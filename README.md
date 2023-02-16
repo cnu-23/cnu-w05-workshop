@@ -89,27 +89,7 @@ As opposed to bubble sort, merge sort is one of the most efficient sorting algor
 
 ![Merge sort](graphics/Merge-sort-example-300px.gif)
 
-Note that merge sort is recursive, meaning that you will have to write a **recursive function**, i.e. a function that calls itself. We will learn more about recursive functions in Week 6, but here is an example of a recursive function to calculate the factorial of some number n, that is the product of all integers smaller than or equal to n:
-
-```python3
-def factorial(n):
-    '''
-    Calculate n! = 1 x 2 x 3 x ... x (n-1) x n for a positive integer n, using a recursive method.
-    We use the fact that n! = n x (n-1)!.
-    '''
-    if n == 0:
-        print('We got to the bottom...')
-        return 1
-    else:
-        # Here, we call the function itself back with a different argument
-        print(f'Returning {n} x {n-1}!')
-        return n * factorial(n-1)
-
-print(factorial(5))
-
-import math
-print(math.factorial(5))
-```
+Note that merge sort is **recursive**, meaning that you will have to write a **recursive function**, as you did in the Week 4 workshop task.
 
 Here are the steps for merge sort:
 
